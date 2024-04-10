@@ -6,12 +6,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="27.0" text="Mail" />
       <TextField fx:id="tfTitle" layoutX="14.0" layoutY="31.0" prefHeight="25.0" prefWidth="275.0" />
-      <Button layoutX="129.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnLOGINclicked" text="LOGIN" />
+      <Button layoutX="126.0" layoutY="265.0" mnemonicParsing="false" onAction="#btnLOGINclicked" text="LOGIN" />
       <Label layoutX="14.0" layoutY="65.0" text="Kode" />
       <PasswordField layoutX="14.0" layoutY="82.0" prefHeight="25.0" prefWidth="275.0" />
+      <Button layoutX="112.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchToScene2" text="Opret Bruger" />
+      <Label layoutX="7.0" layoutY="378.0" text="Scene1" />
    </children>
 </AnchorPane>

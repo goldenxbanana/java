@@ -10,15 +10,17 @@ import javafx.scene.layout.BorderPane;
 
 public class Main extends Application {
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage stage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
 			Scene scene = new Scene(root);
-			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			stage.setScene(scene);
+			stage.show();
 			
-			primaryStage.setTitle("Main screen");
-			primaryStage.setScene(scene);
-			primaryStage.show();
+			
+			stage.setTitle("Main screen");
+			stage.setScene(scene);
+			stage.show();
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
